@@ -7,7 +7,8 @@
     android:background="@color/tiffany_blue"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/main_layout">
 
     <TextView
         android:id="@+id/tv_appname"
@@ -16,7 +17,7 @@
         android:layout_marginTop="200dp"
         android:text="@string/app_name"
         android:textColor="@color/black"
-        android:textSize="50dp"
+        android:textSize="50sp"
         android:fontFamily="monospace"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -28,6 +29,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/tomato_clock_canva"
+        android:contentDescription="@string/tomato_clock_description"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -39,8 +41,8 @@
         android:id="@+id/tv_click"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click anywhere to begin!"
-        android:textSize="20dp"
+        android:text="@string/click_start"
+        android:textSize="20sp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

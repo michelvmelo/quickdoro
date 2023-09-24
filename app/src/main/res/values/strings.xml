@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">quickdoro</string>
     <string name="tomato_clock_description">Image of a clock in the shape of a tomato.</string>
+    <string name="click_start">Click anywhere to begin!</string>
 </resources>

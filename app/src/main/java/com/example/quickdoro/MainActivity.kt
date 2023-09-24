@@ -7,6 +7,7 @@ import android.view.animation.AlphaAnimation
 import android.view.animation.Animation
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +24,12 @@ class MainActivity : AppCompatActivity() {
         anim.repeatMode = Animation.REVERSE
         anim.repeatCount = Animation.INFINITE
         tvClick.startAnimation(anim)
-    }
 
+        //Creates a click event to switch to 'ClockActivity' activity
+        val mainLayout = findViewById<ConstraintLayout>(R.id.main_layout)
+        mainLayout.setOnClickListener{
+            val intentClockActivity = Intent(this, ClockActivity::class.java)
+            startActivity(intentClockActivity)
+        }
+    }
 }
