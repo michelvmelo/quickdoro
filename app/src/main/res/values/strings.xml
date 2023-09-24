@@ -2,4 +2,11 @@
     <string name="app_name">quickdoro</string>
     <string name="tomato_clock_description">Image of a clock in the shape of a tomato.</string>
     <string name="click_start">Click anywhere to begin!</string>
+    <string name="focus">It\'s time to <b>FOCUS</b>!</string>
+    <string name="relax">It\'s time to <b>RELAX</b>!</string>
+    <string name="stop">Stop!</string>
+    <string name="start">Start!</string>
+    <string name="minutes">minute(s)</string>
+    <string name="timer_break">Timer (Break):</string>
+    <string name="timer_study">Timer (Study):</string>
 </resources>
