@@ -9,12 +9,19 @@ No instalation required. One can extract ZIP folder and run the app with your fa
 
 ## To-Do
 
-- [FIX]: To-Do list items not being deleted
-- [FEAT]: persistent To-Do list
+- 0.4.1
+
+[FIX]: To-Do list items not being deleted
+
+- 0.5.0
+
+[FEAT]: persistent To-Do list
 
 ## Versions
 
-Refer to [releases](https://github.com/michelvmelo/quickdoro/releases).
+Current: 0.4.0
+
+For older versions, refer to [releases](https://github.com/michelvmelo/quickdoro/releases).
 
 ## License
 
