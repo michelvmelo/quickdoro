@@ -81,7 +81,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/np_min_break" />
+        app:layout_constraintTop_toBottomOf="@+id/np_min_break"
+        android:layout_marginBottom="100dp"/>
+
 
     <ImageView
         android:id="@+id/imageView"
@@ -91,7 +93,8 @@
         app:layout_constraintEnd_toStartOf="@+id/bt_start"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/np_min_break"
-        app:srcCompat="@drawable/tomato_clock_canva" />
+        app:srcCompat="@drawable/tomato_clock_canva"
+        android:contentDescription="@string/tomato_clock_description" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -101,7 +104,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/bt_start"
         app:layout_constraintTop_toBottomOf="@+id/np_min_break"
-        app:srcCompat="@drawable/tomato_clock_canva" />
+        app:srcCompat="@drawable/tomato_clock_canva"
+        android:contentDescription="@string/tomato_clock_description" />
+
+    <Button
+        android:id="@+id/bt_todo_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/todolist"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/bt_start" />
 
     <!--
         <NumberPicker

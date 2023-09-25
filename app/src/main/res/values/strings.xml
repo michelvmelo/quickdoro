@@ -9,4 +9,9 @@
     <string name="minutes">minute(s)</string>
     <string name="timer_break">Timer (Break):</string>
     <string name="timer_study">Timer (Study):</string>
+    <string name="task_goes_here">Task goes here!</string>
+    <string name="add_task">Add task</string>
+    <string name="del_done">del done</string>
+    <string name="placeholder">...</string>
+    <string name="todolist">to-do list</string>
 </resources>

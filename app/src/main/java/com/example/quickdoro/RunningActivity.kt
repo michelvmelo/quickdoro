@@ -1,13 +1,10 @@
 package com.example.quickdoro
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.os.Handler
-import android.os.Looper
-import android.os.SystemClock
 import android.widget.Button
-import android.widget.Chronometer
 import android.widget.TextView
 import java.util.Locale
 
@@ -33,7 +30,7 @@ class RunningActivity : AppCompatActivity() {
                 val secs = (left / 1000) % 60
                 textClock.text = String.format(Locale.getDefault(), "%02d:%02d", mins, secs)
             }
-
+            //Plays sound and switches to break timer
             override fun onFinish() {
                 textHype.text = getText(R.string.relax)
                 breakTimer.start()
@@ -47,7 +44,7 @@ class RunningActivity : AppCompatActivity() {
                 val secs = (left / 1000) % 60
                 textClock.text = String.format(Locale.getDefault(), "%02d:%02d", mins, secs)
             }
-
+            //Plays sound and switches to study timer
             override fun onFinish() {
                 textHype.text = getText(R.string.focus)
                 studyTimer.start()
@@ -58,6 +55,13 @@ class RunningActivity : AppCompatActivity() {
         val stopButton = findViewById<Button>(R.id.bt_stop)
         stopButton.setOnClickListener {
             finish()
+        }
+
+        //Button to switch to 'To-Do' activity
+        val todoButton = findViewById<Button>(R.id.bt_todo_running)
+        todoButton.setOnClickListener{
+            val intentTodoActivity = Intent(this, ToDoActivity::class.java)
+            startActivity(intentTodoActivity)
         }
     }
 }

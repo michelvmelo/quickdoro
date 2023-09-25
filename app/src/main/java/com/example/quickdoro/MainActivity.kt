@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         anim.repeatCount = Animation.INFINITE
         tvClick.startAnimation(anim)
 
-        //Creates a click event to switch to 'ClockActivity' activity
+        //Creates a click event to switch to 'Clock' activity
         val mainLayout = findViewById<ConstraintLayout>(R.id.main_layout)
         mainLayout.setOnClickListener{
             val intentClockActivity = Intent(this, ClockActivity::class.java)

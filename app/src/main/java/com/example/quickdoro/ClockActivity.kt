@@ -20,13 +20,20 @@ class ClockActivity : AppCompatActivity() {
         npMinBreak.minValue = 0
         npMinBreak.maxValue = 60
 
-        //Sets button function to switch to 'Running' activity
+        //Button to switch to 'Running' activity
         val startButton = findViewById<Button>(R.id.bt_start)
         startButton.setOnClickListener{
             val startRunning = Intent(this, RunningActivity::class.java)
             startRunning.putExtra("study_min", npMinStudy.value)
             startRunning.putExtra("break_min", npMinBreak.value)
             startActivity(startRunning)
+        }
+
+        //Button to switch to 'To-Do` activity
+        val todoButton = findViewById<Button>(R.id.bt_todo_clock)
+        todoButton.setOnClickListener{
+            val intentTodoActivity = Intent(this, ToDoActivity::class.java)
+            startActivity(intentTodoActivity)
         }
     }
 }
