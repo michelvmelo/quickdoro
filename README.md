@@ -1,11 +1,11 @@
 # quickdoro
 
 quickdoro is a simple Android App which consists of a Pomodoro Technique timer along with a to-do list. 
-It's being build in Kotlin for Android 5.0+ (API 21+), so it's suitable to be used on almost all current Android phones.
+It's being built in Kotlin for Android 5.0+ (API 21+), so it's suitable to be used on almost all current Android phones.
 
-## Instalation
+## Installation
 
-No instalation required. One can extract ZIP folder and run the app with your favorite IDE.
+No installation required. One can extract ZIP folder and run the app with your favorite IDE.
 
 ## To-Do
 
